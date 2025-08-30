@@ -5,7 +5,7 @@ on:
       - main
     paths:
       - 'backend/Dockerfile'
-      - 'front/Dockerfile'
+      - 'frontend/Dockerfile'
 
 jobs:
   publish_images:
@@ -16,7 +16,7 @@ jobs:
       - name: build image
         run: |
           docker build ./backend/ -t crimson02/nodeback:latest
-          docker build ./front/ -t crimson02/nodefront:latest
+          docker build ./frontend/ -t crimson02/nodefront:latest
       - name: push image to docker hub
         run: |
           docker login -u crimson02 -p ${{ secrets.DOCKER_HUB_TOKEN }}
