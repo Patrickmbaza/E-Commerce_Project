@@ -5,4 +5,4 @@ COPY  package.json ./
 RUN yarn install --production --frozen-lockfile
 COPY . .
 EXPOSE 5000
-CMD ["node", "src/server.js"]
+CMD ["node", "src/server.js"]# test
