@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: ghcr.io/YOUR_ORG/frontend:latest
+        image: crimson02/nodefront:latest
         ports: [{ containerPort: 8080 }]
         env:
         - name: BACKEND_URL

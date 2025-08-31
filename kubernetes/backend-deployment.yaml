@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: ghcr.io/YOUR_ORG/backend:latest
+        image: crimson02/nodeback:latest
         ports: [{ containerPort: 5000 }]
         env:
         - name: POSTGRESS_URI
